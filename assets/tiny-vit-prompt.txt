@@ -1,0 +1,17 @@
+Generated with the built-in image_gen tool.
+
+Use case: illustration-story. Asset type: GitHub README hero illustration for a tiny Vision Transformer implemented in PyTorch. Create a landscape hand-drawn notebook doodle, warm off-white subtle dotted paper, wobbly charcoal ink outlines and readable playful hand lettering, restrained pastel lavender, mint, pale peach. Inspired by the reference's notebook humor and friendly model mascot, but original ViT-specific content. No GitHub UI, no screenshot frame.
+Composition: title at top, four illustrated pipeline boxes with arrows beneath, a large adorable square patchwork robot mascot in the middle with small sticky notes around it, a bold handwritten punchline at bottom. Plenty of breathing space. Draw a handwritten digit 7 on a small image grid in first box, four-by-four patches in second; robot wears tiny patch tiles.
+Exact text:
+Top title: "building a tiny ViT (one patch at a time)"
+Pipeline box 1: "28 x 28 image" / "just a little 7"
+Pipeline box 2: "16 patches" / "image confetti"
+Pipeline box 3: "self-attention" / "everyone talks"
+Pipeline box 4: "10 classes" / "probably a 7"
+Mascot caption: "tiny patches, big feelings"
+Left sticky note: "[B, 17, 32]" / "the extra one is CLS"
+Right sticky note: "96.52% accuracy" / "still overthinking a 4"
+Small lower note: "7 x 7 patches" / "some assembly required"
+Bottom punchline: "cut an image into pieces. somehow, it learns."
+Keep all text legible and correct. Friendly charming ink doodle with expressive little eyes and stick arms. No corporate graphics, no photorealism, no watermarks.
+

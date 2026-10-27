@@ -31,7 +31,7 @@ class TransformerEncoder(nn.Module):
         super().__init__()
         self.layer_norm1=nn.LayerNorm(token_dim)
         self.layer_norm2=nn.LayerNorm(token_dim)
-        self.multihead_attention=nn.MultiheadAttention(token_dim,num_heads)
+        self.multihead_attention=nn.MultiheadAttention(token_dim,num_heads, batch_first=True)
         self.mlp=nn.Sequential(
             nn.Linear(token_dim, mlp_hidden_dimension), 
             nn.GELU(), 
@@ -71,7 +71,7 @@ class VisionTransformer(nn.Module):
         super().__init__(*args, **kwargs)
 
         self.patch_embedding=PatchEmbedding()
-        self.cls_token=nn.parameter(torch.randn(1,1,token_dim))
+        self.cls_token=nn.Parameter(torch.randn(1,1,token_dim))
         self.position_embedding=nn.Parameter(torch.randn(1,num_patches+1, token_dim))
         self.transformer_block=nn.Sequential(
             *[TransformerEncoder() for _ in range(transformer_blocks)])
